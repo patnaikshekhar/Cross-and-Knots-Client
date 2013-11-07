@@ -1,0 +1,26 @@
+.btn-find {
+    margin-left: 1.5em;
+}
+
+#gameCanvas {
+    width: 350px;
+    height: 350px;
+    margin-left: 180px;
+}
+
+#gameDivs {
+    display: none;
+}
+
+.center-image {
+    margin-top: 70px;
+}
+
+#error {
+    margin-top: 150px;
+    display: none;
+}
+
+#setName {
+    margin-top: 150px;
+}

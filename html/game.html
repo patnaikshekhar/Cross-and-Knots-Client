@@ -1,0 +1,57 @@
+<div>
+    <div id="loading">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-3">
+                <h2>Searching for opponents....</h2>
+            </div>
+        </div>
+
+        <div class="row center-image">
+            <div class="col-sm-3 col-sm-offset-4">
+                <img src="../images/loading.gif"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="error">
+        <div class="alert alert-danger">
+                <p>Cannot connect to server. Click <a href="#/game" ng-click="restart()" class="alert-link">here</a> to try again.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="gameDivs">
+
+        <div class="row" id="playerNames">
+            <div class="col-sm-6 col-sm-offset-5">
+                <p><strong id="player1">Player 1</strong> vs. <strong id="player2">Player 2</strong></p>
+            </div>
+        </div>
+
+        <div class="row" id="states">
+            <div class="alert alert-info" id="outcome_turn">
+                <p>It's now <strong>your</strong> turn.</p>
+            </div>
+            <div class="alert alert-warning" id="outcome_wait">
+                <p>It's now your <strong>opponents</strong> turn.</p>
+            </div>
+            <div class="alert alert-success" id="outcome_won">
+                <p>Awesome you <strong>won</strong> this game. Click <a href="#/game" ng-click="restart()" class="alert-link">here</a> to find and beat another opponent.</p>
+            </div>
+            <div class="alert alert-danger" id="outcome_lost">
+                <p>Awe shucks! you <strong>lost</strong> this game. Click <a href="#/game" ng-click="restart()" class="alert-link">here</a> to find another opponent.</p>
+            </div>
+            <div class="alert alert-danger" id="outcome_left">
+                <p>Your opponent ran away from this battleground. Click <a href="#/game" ng-click="restart()" class="alert-link">here</a> to find another opponent.</p>
+            </div>
+            <div class="alert alert-danger" id="outcome_draw">
+                <p>This game is a draw. Click <a href="#/game" ng-click="restart()" class="alert-link">here</a> to find another opponent.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <canvas id="gameCanvas" width="350" height="350" ng-mousemove="mouseMove($event)" ng-click="mouseClick($event)"></canvas>
+        </div>
+
+    </div>
+</div>

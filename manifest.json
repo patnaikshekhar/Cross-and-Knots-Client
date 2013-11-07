@@ -1,0 +1,14 @@
+{
+  "name": "Knots and Crosses",
+  "description": "This is a web socket based knots and crosses game",
+  "version": "0.1",
+  "app": {
+    "background": {
+      "scripts": ["js/main.js"]
+    }
+  },
+  "icons": { "16": "images/knots_and_crosses.png", "128": "images/knots_and_crosses.png" },
+  "permissions": [
+    "storage"
+  ]
+}
